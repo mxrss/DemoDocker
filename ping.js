@@ -23,7 +23,7 @@ exports.handler = function(event, context) {
          out = fs.openSync('/tmp/out.log', 'a');
          err = fs.openSync('/tmp/out.log', 'a');
 
-     var child = spawn('/var/task/redisping', ['52.5.32.219:6379'], {
+     var child = spawn('/var/task/redisping', [''], {
        detached: true,
        stdio: ['ignore', out, err]
      });
