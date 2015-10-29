@@ -8,7 +8,7 @@ trim() {
     echo "$var"
 }
 
-
+ eval "echo ~$USER"
   echo "Creating docker machine 'default'"
   $(docker-machine create --driver generic --generic-ip-address localhost "default")
   echo "Docker machine connection 'default' created"
