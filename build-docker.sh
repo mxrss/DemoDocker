@@ -8,11 +8,7 @@ trim() {
     echo "$var"
 }
 
-if [$(trim $DOCKERMACHINE_STATUS) -eq '']; then
-  echo "Creating docker machine 'default'"
-  $(docker-machine create --driver generic --generic-ip-address localhost "default")
-  echo "Docker machine connection 'default' created"
-fi
+
 
 echo "Setting Docker machine env!"
 eval "$(docker-machine env default)"
