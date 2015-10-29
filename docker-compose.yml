@@ -5,3 +5,6 @@ golang:
     - "./:/usr/src/myapp"
   command:
     - make
+    - installdeps
+    - build
+    - run

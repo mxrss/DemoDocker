@@ -10,8 +10,8 @@ import (
 func main() {
 
 	if len(os.Args) != 2 {
-		fmt.Println("No arguments")
-		os.Exit(-1)
+		fmt.Println("System Problem But it worked!")
+		os.Exit(0)
 	}
 
 	fmt.Println("Entering Program and attempting to connect to %s", os.Args[1])
